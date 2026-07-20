@@ -3,37 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>关于我</title>
+    <title>关于我 - Trees</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: "Microsoft YaHei", sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            padding: 40px 20px;
-            color: #333;
+        .about-hero {
+            text-align: center;
+            padding: 40px 0;
         }
-        .container {
+        .avatar-placeholder {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2D6A4F, #95D5B2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            margin: 0 auto 20px;
+            box-shadow: 0 8px 25px rgba(45,106,79,0.3);
+        }
+        .about-content {
             background: white;
-            border-radius: 16px;
-            padding: 40px 50px;
-            max-width: 700px;
-            margin: 0 auto;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            border-radius: 14px;
+            padding: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
         }
-        h1 { color: #667eea; margin-bottom: 20px; }
-        p { line-height: 1.8; color: #666; margin-bottom: 15px; }
-        .back { display: inline-block; margin-top: 20px; color: #667eea; text-decoration: none; }
-        .back:hover { text-decoration: underline; }
+        .about-content h2 {
+            color: #2D6A4F;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        .about-content p {
+            color: #555;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+        .interests {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .interest-tag {
+            padding: 8px 18px;
+            background: #E8F5E9;
+            color: #2D6A4F;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        .quote-box {
+            background: linear-gradient(135deg, #2D6A4F, #40916C);
+            color: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+            font-style: italic;
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+        .quote-box .author {
+            margin-top: 15px;
+            font-style: normal;
+            font-size: 0.9em;
+            opacity: 0.8;
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="photo.jpg" alt="我的照片" style="width: 200px; border-radius: 50%;">
-        <h1>关于我</h1>
-        <p>这里写你的个人介绍。比如你的教育背景、工作经历、兴趣爱好等。</p>
-        <p>可以多写几段，让大家更了解你。</p>
-        <a href="index.html" class="back">← 返回首页</a>
+    <div class="navbar">
+        <div class="logo"> <span>Trees</span></div>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="wiki.html">树木百科</a>
+            <a href="gallery.html">树木图鉴</a>
+            <a href="blog.html">种树日记</a>
+            <a href="about-trees.html">关于树木</a>
+            <a href="about.html" class="active">关于我</a>
+        </nav>
+    </div>
+
+    <div class="page-container">
+        <div class="about-hero">
+            <div class="avatar-placeholder">🌱</div>
+            <h1 class="page-title" style="margin-bottom: 5px;">关于我</h1>
+            <p class="page-subtitle">一个热爱自然、喜欢种树的普通人</p>
+        </div>
+
+        <div class="quote-box">
+            "种一棵树最好的时间是十年前，其次是现在。"
+            <div class="author">—— 非洲谚语</div>
+        </div>
+
+        <div class="about-content">
+            <h2> 你好！</h2>
+            <p>欢迎来到我的小天地！我是一个热爱大自然的人，尤其喜欢树木。从第一次种下一棵小树苗开始，我就被生命成长的力量深深吸引。</p>
+            <p>这个网站是我记录与树相伴的点点滴滴的地方。在这里，我会分享树木的知识、拍摄的照片，以及种树过程中的喜怒哀乐。</p>
+            <p>我相信，每一棵树都有自己的故事，每一次与树的相遇都是大自然给我们的礼物。希望通过这个网站，能让更多人感受到树木的美好。</p>
+
+            <h2 style="margin-top: 30px;"> 我的兴趣</h2>
+            <div class="interests">
+                <span class="interest-tag">🌳 种树养花</span>
+                <span class="interest-tag">📷 自然摄影</span>
+                <span class="interest-tag">📖 植物科普</span>
+                <span class="interest-tag">🥾 户外徒步</span>
+                <span class="interest-tag">🎨 自然手绘</span>
+                <span class="interest-tag">🌱 环保生活</span>
+            </div>
+
+            <h2 style="margin-top: 30px;"> 建站初衷</h2>
+            <p>创建这个网站的初衷很简单——我想有一个地方，可以记录我和树的故事。同时也希望能通过分享树木的知识和美丽，让更多人关注和爱护我们身边的绿色生命。</p>
+            <p>如果你也喜欢树，欢迎通过联系方式页面和我交流！</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>🌳 Trees - 与树同行 | 用热爱记录每一棵树的故事</p>
     </div>
 </body>
 </html>

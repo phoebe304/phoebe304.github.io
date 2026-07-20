@@ -3,51 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人网站</title>
+    <title>Trees - 与树同行</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body {
-            font-family: "Microsoft YaHei", sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #333;
+        /* 首页特殊样式 */
+        .hero {
+            background: linear-gradient(135deg, #2D6A4F 0%, #40916C 50%, #52B788 100%);
+            padding: 80px 40px;
+            text-align: center;
+            color: white;
+            border-radius: 0 0 30px 30px;
         }
-        .container {
+        .hero h1 {
+            font-size: 3em;
+            letter-spacing: 6px;
+            margin-bottom: 15px;
+        }
+        .hero h1 span { color: #95D5B2; }
+        .hero p {
+            font-size: 1.2em;
+            opacity: 0.9;
+            max-width: 500px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+        .hero .tree-emoji {
+            font-size: 4em;
+            margin-bottom: 20px;
+        }
+        .hero-btn {
+            display: inline-block;
+            padding: 14px 36px;
+            background: white;
+            color: #2D6A4F;
+            border-radius: 30px;
+            font-size: 1.05em;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .hero-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        /* 特色板块 */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+        @media (max-width: 700px) {
+            .features { grid-template-columns: 1fr; }
+        }
+        .feature-card {
             background: white;
             border-radius: 16px;
-            padding: 40px 50px;
-            max-width: 600px;
+            padding: 35px 25px;
             text-align: center;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.2s;
         }
-        h1 { font-size: 2em; margin-bottom: 10px; color: #667eea; }
-        p { font-size: 1.1em; line-height: 1.8; color: #666; margin-bottom: 20px; }
-        .links a {
-            display: inline-block;
-            margin: 5px 10px;
-            padding: 10px 24px;
-            background: #667eea;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: background 0.3s;
+        .feature-card:hover { transform: translateY(-5px); }
+        .feature-card .icon { font-size: 2.5em; margin-bottom: 15px; }
+        .feature-card h3 { color: #2D6A4F; margin-bottom: 10px; }
+        .feature-card p { color: #888; font-size: 0.95em; }
+
+        /* 精选树木 */
+        .featured-trees {
+            margin-top: 50px;
         }
-        .links a:hover { background: #764ba2; }
+        .featured-trees h2 {
+            color: #2D6A4F;
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .tree-card {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            background: white;
+            border-radius: 14px;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.2s;
+        }
+        .tree-card:hover { transform: translateX(5px); }
+        .tree-card .tree-icon { font-size: 2.5em; }
+        .tree-card .tree-info h4 { color: #2D6A4F; margin-bottom: 4px; }
+        .tree-card .tree-info p { color: #888; font-size: 0.9em; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>你好，欢迎来到我的网站！</h1>
-        <p>希望对你有帮助<p>
-        <p>敬请期待<p>
-        <div class="links">
+    <!-- 导航栏 -->
+    <div class="navbar">
+        <div class="logo">🌳 <span>Trees</span></div>
+        <nav>
+            <a href="index.html" class="active">首页</a>
+            <a href="wiki.html">树木百科</a>
+            <a href="gallery.html">树木图鉴</a>
+            <a href="blog.html">种树日记</a>
+            <a href="about-trees.html">关于树木</a>
             <a href="about.html">关于我</a>
-            <a href="portfolio.html">作品集</a>
-            <a href="mailto:你的邮箱@example.com">联系我</a>
+        </nav>
+    </div>
+
+    <!-- 首页大图 -->
+    <div class="hero">
+        <div class="tree-emoji">🌲🌳🌴</div>
+        <h1>🌿 <span>Trees</span></h1>
+        <p>探索树木的世界，感受自然的力量。<br>这里有关于树的一切。</p>
+        <a href="wiki.html" class="hero-btn">开始探索 →</a>
+    </div>
+
+    <!-- 特色板块 -->
+    <div class="page-container">
+        <div class="features">
+            <a href="wiki.html" class="feature-card">
+                <div class="icon">📖</div>
+                <h3>树木百科</h3>
+                <p>了解各种树木的知识，从乔木到灌木，从果树到观赏树</p>
+            </a>
+            <a href="gallery.html" class="feature-card">
+                <div class="icon"></div>
+                <h3>树木图鉴</h3>
+                <p>用镜头记录树木之美，四季变换中的不同姿态</p>
+            </a>
+            <a href="blog.html" class="feature-card">
+                <div class="icon">🌱</div>
+                <h3>种树日记</h3>
+                <p>记录种树、养树、观察树的故事和感悟</p>
+            </a>
         </div>
+
+        <!-- 精选树木 -->
+        <div class="featured-trees">
+            <h2>🍃 精选树木</h2>
+            <div class="tree-card">
+                <div class="tree-icon"></div>
+                <div class="tree-info">
+                    <h4>樱花树</h4>
+                    <p>春天最浪漫的存在，花期短暂却绚烂无比</p>
+                </div>
+            </div>
+            <div class="tree-card">
+                <div class="tree-icon">🍁</div>
+                <div class="tree-info">
+                    <h4>枫树</h4>
+                    <p>秋天的代言人，红叶如火，层林尽染</p>
+                </div>
+            </div>
+            <div class="tree-card">
+                <div class="tree-icon">🌲</div>
+                <div class="tree-info">
+                    <h4>松树</h4>
+                    <p>四季常青，坚韧不拔，象征长寿与坚强</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>🌳 Trees - 与树同行 | 用热爱记录每一棵树的故事</p>
     </div>
 </body>
 </html>

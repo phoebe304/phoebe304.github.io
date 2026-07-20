@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于树木 - Trees</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .fact-card {
+            background: white;
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border-left: 4px solid #2D6A4F;
+        }
+        .fact-card h3 {
+            color: #2D6A4F;
+            font-size: 1.15em;
+            margin-bottom: 10px;
+        }
+        .fact-card p {
+            color: #555;
+            line-height: 1.8;
+        }
+        .fact-number {
+            display: inline-block;
+            background: #2D6A4F;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 0.85em;
+            margin-right: 8px;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #2D6A4F, #40916C);
+            color: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .highlight-box h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .highlight-box p {
+            opacity: 0.9;
+            font-size: 1.05em;
+        }
+        .stats-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 30px 0;
+        }
+        @media (max-width: 700px) {
+            .stats-row { grid-template-columns: 1fr; }
+        }
+        .stat-card {
+            background: white;
+            border-radius: 14px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+        .stat-card .number {
+            font-size: 2.2em;
+            font-weight: bold;
+            color: #2D6A4F;
+        }
+        .stat-card .label {
+            color: #888;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+        .timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 8px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #95D5B2;
+            border-radius: 2px;
+        }
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+            padding-left: 20px;
+        }
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -26px;
+            top: 5px;
+            width: 14px;
+            height: 14px;
+            background: #2D6A4F;
+            border-radius: 50%;
+            border: 3px solid #F5F1E8;
+        }
+        .timeline-item h4 {
+            color: #2D6A4F;
+            margin-bottom: 5px;
+        }
+        .timeline-item p {
+            color: #666;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"> <span>Trees</span></div>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="wiki.html">树木百科</a>
+            <a href="gallery.html">树木图鉴</a>
+            <a href="blog.html">种树日记</a>
+            <a href="about-trees.html" class="active">关于树木</a>
+            <a href="about.html">关于我</a>
+        </nav>
+    </div>
+
+    <div class="page-container">
+        <h1 class="page-title">🌍 关于树木</h1>
+        <p class="page-subtitle">那些你不知道的树的冷知识</p>
+
+        <!-- 数据统计 -->
+        <div class="stats-row">
+            <div class="stat-card">
+                <div class="number">3 万亿</div>
+                <div class="label">地球上大约有这么多棵树</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">73,000</div>
+                <div class="label">已知的树种数量</div>
+            </div>
+            <div class="stat-card">
+                <div class="number">5,000 年</div>
+                <div class="label">最古老树木的树龄</div>
+            </div>
+        </div>
+
+        <!-- 趣味冷知识 -->
+        <h2 style="color: #2D6A4F; margin: 30px 0 20px;"> 趣味冷知识</h2>
+
+        <div class="fact-card">
+            <h3><span class="fact-number">1</span>树木之间会"说话"</h3>
+            <p>树木通过地下的真菌网络（被称为"木联网"）互相传递信息和养分。当一棵树受到虫害攻击时，它会通过根系网络向周围的树发出警告信号，让其他树提前产生防御物质。科学家把这个网络称为"Wood Wide Web"。</p>
+        </div>
+
+        <div class="fact-card">
+            <h3><span class="fact-number">2</span>一棵大树一天能喝 400 升水</h3>
+            <p>一棵成年大树每天可以从土壤中吸收多达 400 升水，并通过蒸腾作用将这些水分释放到大气中。这就是为什么森林里总是感觉湿润凉爽。一棵大树就像一个天然的加湿器！</p>
+        </div>
+
+        <div class="fact-card">
+            <h3><span class="fact-number">3</span>最古老的树已经 5000 岁了</h3>
+            <p>位于美国加州的"玛士撒拉松"（Methuselah）是一棵刺果松，树龄超过 4800 年。而瑞典的一棵挪威云杉的根系甚至有 9500 年的历史！这些树在人类文明诞生之前就已经存在了。</p>
+        </div>
+
+        <div class="fact-card">
+            <h3><span class="fact-number">4</span>树木可以记住"痛苦"</h3>
+            <p>研究发现，树木有某种形式的"记忆"。当一棵树经历过干旱后，它在未来的干旱中会表现得更有抵抗力。就像人一样，经历过的困难会让它变得更坚强。</p>
+        </div>
+
+        <div class="fact-card">
+            <h3><span class="fact-number">5</span>最高的树比自由女神像还高</h3>
+            <p>世界上最高的树是加州的"亥伯龙神"（Hyperion），一棵海岸红杉，高度达到 115.92 米，比自由女神像（93 米）还要高 20 多米！它的具体位置被保密，以防止游客打扰。</p>
+        </div>
+
+        <div class="fact-card">
+            <h3><span class="fact-number">6</span>树木能净化空气</h3>
+            <p>一棵成年树每年可以吸收约 22 公斤的二氧化碳，同时释放足够 4 个人呼吸的氧气。一公顷的森林每天可以吸收 1 吨二氧化碳。所以多种树真的可以拯救地球！</p>
+        </div>
+
+        <!-- 树木与人类 -->
+        <div class="highlight-box">
+            <h2> 树木与人类文明</h2>
+            <p>从钻木取火到造纸印刷，从建筑房屋到制作乐器，树木陪伴人类走过了整个文明史</p>
+        </div>
+
+        <h2 style="color: #2D6A4F; margin: 30px 0 20px;">📜 树木简史</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <h4>3.5 亿年前</h4>
+                <p>地球上出现了最早的树木——古蕨类植物，它们可以长到 30 米高，是当时最高的生物。</p>
+            </div>
+            <div class="timeline-item">
+                <h4>10000 年前</h4>
+                <p>人类开始有意识地种植果树和用材树，农业文明兴起。</p>
+            </div>
+            <div class="timeline-item">
+                <h4>5000 年前</h4>
+                <p>古埃及人用雪松木建造金字塔和船只，黎巴嫩雪松成为珍贵的贸易品。</p>
+            </div>
+            <div class="timeline-item">
+                <h4>2000 年前</h4>
+                <p>中国古人将松、竹、梅称为"岁寒三友"，赋予树木深厚的文化内涵。</p>
+            </div>
+            <div class="timeline-item">
+                <h4>1872 年</h4>
+                <p>美国设立世界上第一个植树节，随后各国纷纷效仿。中国于 1979 年将 3 月 12 日定为植树节。</p>
+            </div>
+            <div class="timeline-item">
+                <h4>今天</h4>
+                <p>全球森林面积正在减少，但越来越多的人开始关注植树造林和生态保护。每个人都可以为地球种下一棵树。</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>🌳 Trees - 与树同行 | 用热爱记录每一棵树的故事</p>
+    </div>
+</body>
+</html>

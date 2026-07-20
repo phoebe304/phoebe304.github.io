@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>树木百科 - Trees</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .category-section { margin-bottom: 40px; }
+        .category-title {
+            font-size: 1.4em;
+            color: #2D6A4F;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #95D5B2;
+        }
+        .tree-detail {
+            background: white;
+            border-radius: 14px;
+            padding: 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            border-left: 4px solid #2D6A4F;
+        }
+        .tree-detail h3 {
+            color: #2D6A4F;
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+        .tree-detail .latin {
+            color: #999;
+            font-style: italic;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        .tree-detail .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            margin: 12px 0;
+            font-size: 0.9em;
+        }
+        .tree-detail .info-item {
+            background: #f8f9f5;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+        .tree-detail .info-item strong { color: #2D6A4F; }
+        .tree-detail .fun-fact {
+            background: #FFFDE7;
+            padding: 12px 15px;
+            border-radius: 10px;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        .tree-detail .fun-fact::before { content: " "; }
+        @media (max-width: 600px) {
+            .tree-detail .info-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"> <span>Trees</span></div>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="wiki.html" class="active">树木百科</a>
+            <a href="gallery.html">树木图鉴</a>
+            <a href="blog.html">种树日记</a>
+            <a href="about-trees.html">关于树木</a>
+            <a href="about.html">关于我</a>
+        </nav>
+    </div>
+
+    <div class="page-container">
+        <h1 class="page-title">📖 树木百科</h1>
+        <p class="page-subtitle">认识身边的树木，了解它们的故事</p>
+
+        <!-- 观赏树木 -->
+        <div class="category-section">
+            <h2 class="category-title">🌸 观赏树木</h2>
+
+            <div class="tree-detail">
+                <h3>🌸 樱花树</h3>
+                <p class="latin">Prunus serrulata</p>
+                <p>樱花树是蔷薇科李属的落叶乔木，原产于中国和日本。每年春天开花，花朵粉白相间，是春天最浪漫的象征。樱花花期很短，通常只有 7-10 天，因此有"樱花七日"的说法。</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>类型：</strong>落叶乔木</div>
+                    <div class="info-item"><strong>花期：</strong>3-4 月</div>
+                    <div class="info-item"><strong>高度：</strong>5-25 米</div>
+                    <div class="info-item"><strong>分布：</strong>中国、日本、韩国</div>
+                </div>
+                <div class="fun-fact">日本有超过 300 种樱花品种，其中最著名的是"染井吉野樱"，占日本樱花总数的 80%。</div>
+            </div>
+
+            <div class="tree-detail">
+                <h3> 枫树</h3>
+                <p class="latin">Acer spp.</p>
+                <p>枫树是槭树科槭属植物的统称，全球有超过 200 种。枫树最迷人的是秋天的红叶，叶片会变成鲜红、橙黄或金黄色，是秋季最美的风景之一。枫树也是加拿大的国树。</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>类型：</strong>落叶乔木</div>
+                    <div class="info-item"><strong>变色期：</strong>10-11 月</div>
+                    <div class="info-item"><strong>高度：</strong>10-45 米</div>
+                    <div class="info-item"><strong>分布：</strong>全球温带地区</div>
+                </div>
+                <div class="fun-fact">加拿大国旗上的枫叶图案就来源于糖枫，枫糖浆也是从枫树汁液中提取的。</div>
+            </div>
+
+            <div class="tree-detail">
+                <h3>🌺 紫薇树</h3>
+                <p class="latin">Lagerstroemia indica</p>
+                <p>紫薇是千屈菜科紫薇属的落叶灌木或小乔木，花期长达 3-4 个月，从夏到秋持续开花，因此有"百日红"的美称。紫薇树皮光滑，用手轻挠树干，整棵树会微微颤动，所以又叫"痒痒树"。</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>类型：</strong>落叶灌木/小乔木</div>
+                    <div class="info-item"><strong>花期：</strong>6-9 月</div>
+                    <div class="info-item"><strong>高度：</strong>3-7 米</div>
+                    <div class="info-item"><strong>分布：</strong>中国、亚洲南部</div>
+                </div>
+                <div class="fun-fact">紫薇树怕痒！轻轻挠它的树干，枝叶会轻轻颤动，这是因为它的树皮特别薄，对振动非常敏感。</div>
+            </div>
+        </div>
+
+        <!-- 常绿树木 -->
+        <div class="category-section">
+            <h2 class="category-title">🌲 常绿树木</h2>
+
+            <div class="tree-detail">
+                <h3>🌲 松树</h3>
+                <p class="latin">Pinus spp.</p>
+                <p>松树是松科松属植物的统称，全球有超过 100 种。松树四季常青，耐寒耐旱，生命力极强。在中国文化中，松树与竹、梅并称"岁寒三友"，象征坚韧不拔的品格。</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>类型：</strong>常绿乔木</div>
+                    <div class="info-item"><strong>寿命：</strong>数百年至千年</div>
+                    <div class="info-item"><strong>高度：</strong>20-50 米</div>
+                    <div class="info-item"><strong>分布：</strong>北半球广泛分布</div>
+                </div>
+                <div class="fun-fact">世界上最古老的松树"玛士撒拉松"位于美国加州，树龄超过 4800 年！</div>
+            </div>
+
+            <div class="tree-detail">
+                <h3>🎄 杉树</h3>
+                <p class="latin">Cunninghamia lanceolata</p>
+                <p>杉树是杉科杉属的常绿乔木，是中国南方最重要的用材树种之一。杉树生长快、材质好，树干通直，是建筑、家具的优良木材。杉树也是常见的圣诞树品种。</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>类型：</strong>常绿乔木</div>
+                    <div class="info-item"><strong>生长速度：</strong>较快</div>
+                    <div class="info-item"><strong>高度：</strong>30 米</div>
+                    <div class="info-item"><strong>分布：</strong>中国长江流域以南</div>
+                </div>
+                <div class="fun-fact">杉木是中国人工栽培面积最大的树种，全国种植面积超过 1 亿亩。</div>
+            </div>
+        </div>
+
+        <!-- 果树 -->
+        <div class="category-section">
+            <h2 class="category-title">🍎 果树</h2>
+
+            <div class="tree-detail">
+                <h3>🍎 苹果树</h3>
+                <p class="latin">Malus domestica</p>
+                <p>苹果树是蔷薇科苹果属的落叶乔木，原产于中亚地区。苹果是全球种植最广泛的水果之一，全世界有超过 7500 个苹果品种。苹果树一般种植后 3-5 年开始结果。</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>类型：</strong>落叶乔木</div>
+                    <div class="info-item"><strong>果期：</strong>8-10 月</div>
+                    <div class="info-item"><strong>高度：</strong>3-12 米</div>
+                    <div class="info-item"><strong>分布：</strong>全球温带地区</div>
+                </div>
+                <div class="fun-fact">一棵成年苹果树每年可以结出约 400 个苹果，足够一个人吃一年！</div>
+            </div>
+
+            <div class="tree-detail">
+                <h3>🍊 柑橘树</h3>
+                <p class="latin">Citrus reticulata</p>
+                <p>柑橘树是芸香科柑橘属的常绿小乔木，原产于中国南方。柑橘类水果包括橘子、橙子、柚子、柠檬等，是中国产量最大的水果类别。柑橘树四季常绿，花香浓郁。</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>类型：</strong>常绿小乔木</div>
+                    <div class="info-item"><strong>果期：</strong>10-12 月</div>
+                    <div class="info-item"><strong>高度：</strong>3-5 米</div>
+                    <div class="info-item"><strong>分布：</strong>中国南方、地中海</div>
+                </div>
+                <div class="fun-fact">中国是柑橘的原产地，种植历史超过 4000 年。"橘生淮南则为橘，生于淮北则为"说的就是它。</div>
+            </div>
+        </div>
+
+        <!-- 行道树 -->
+        <div class="category-section">
+            <h2 class="category-title">️ 行道树</h2>
+
+            <div class="tree-detail">
+                <h3>🌳 法国梧桐</h3>
+                <p class="latin">Platanus × acerifolia</p>
+                <p>法国梧桐（二球悬铃木）是悬铃木科的落叶大乔木，是世界上种植最广泛的行道树之一。树冠宽大，遮荫效果好，夏天走在梧桐树下非常凉爽。南京、上海的街道两旁种满了法国梧桐。</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>类型：</strong>落叶大乔木</div>
+                    <div class="info-item"><strong>树龄：</strong>可达数百年</div>
+                    <div class="info-item"><strong>高度：</strong>20-35 米</div>
+                    <div class="info-item"><strong>分布：</strong>全球城市广泛种植</div>
+                </div>
+                <div class="fun-fact">南京的法国梧桐是 1929 年为迎接孙中山先生奉安大典而种植的，如今已成为南京的城市名片。</div>
+            </div>
+
+            <div class="tree-detail">
+                <h3>🌿 银杏树</h3>
+                <p class="latin">Ginkgo biloba</p>
+                <p>银杏是银杏科银杏属的落叶乔木，是地球上现存最古老的树种之一，被称为"活化石"。银杏叶呈扇形，秋天变成金黄色，非常美丽。银杏果（白果）可以食用，叶子可以入药。</p>
+                <div class="info-grid">
+                    <div class="info-item"><strong>类型：</strong>落叶乔木</div>
+                    <div class="info-item"><strong>变色期：</strong>11-12 月</div>
+                    <div class="info-item"><strong>高度：</strong>20-40 米</div>
+                    <div class="info-item"><strong>分布：</strong>中国原产，全球种植</div>
+                </div>
+                <div class="fun-fact">银杏树在地球上存在了超过 2.7 亿年，比恐龙还古老！它是植物界的"活化石"。</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>🌳 Trees - 与树同行 | 用热爱记录每一棵树的故事</p>
+    </div>
+</body>
+</html>

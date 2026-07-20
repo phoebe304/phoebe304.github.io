@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系方式 - Trees</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+        @media (max-width: 600px) {
+            .contact-grid { grid-template-columns: 1fr; }
+        }
+        .contact-card {
+            background: white;
+            border-radius: 14px;
+            padding: 30px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+            transition: transform 0.2s;
+        }
+        .contact-card:hover {
+            transform: translateY(-3px);
+        }
+        .contact-card .icon {
+            font-size: 2.5em;
+            margin-bottom: 15px;
+        }
+        .contact-card h3 {
+            color: #2D6A4F;
+            margin-bottom: 8px;
+        }
+        .contact-card p {
+            color: #888;
+            font-size: 0.95em;
+        }
+        .contact-card a {
+            color: #2D6A4F;
+            font-weight: bold;
+        }
+        .contact-card a:hover {
+            text-decoration: underline;
+        }
+        .message-box {
+            background: white;
+            border-radius: 14px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+        }
+        .message-box h2 {
+            color: #2D6A4F;
+            margin-bottom: 15px;
+        }
+        .message-box p {
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 10px;
+        }
+        .highlight-text {
+            background: #E8F5E9;
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            color: #2D6A4F;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">🌳 <span>Trees</span></div>
+        <nav>
+            <a href="index.html">首页</a>
+            <a href="wiki.html">树木百科</a>
+            <a href="gallery.html">树木图鉴</a>
+            <a href="blog.html">种树日记</a>
+            <a href="about-trees.html">关于树木</a>
+            <a href="about.html">关于我</a>
+        </nav>
+    </div>
+
+    <div class="page-container">
+        <h1 class="page-title">📬 联系方式</h1>
+        <p class="page-subtitle">欢迎和我交流关于树的一切</p>
+
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="icon">📧</div>
+                <h3>邮箱</h3>
+                <p>有任何问题或建议，欢迎发邮件给我</p>
+                <p><a href="mailto:your@email.com">your@email.com</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="icon">💬</div>
+                <h3>微信</h3>
+                <p>也可以加微信交流</p>
+                <p><strong>微信号：your_wechat_id</strong></p>
+            </div>
+            <div class="contact-card">
+                <div class="icon">🐦</div>
+                <h3>微博</h3>
+                <p>关注我的微博，获取更多树木内容</p>
+                <p><a href="#">@Trees与树同行</a></p>
+            </div>
+            <div class="contact-card">
+                <div class="icon"></div>
+                <h3>小红书</h3>
+                <p>分享树木摄影和种树日常</p>
+                <p><a href="#">Trees与树同行</a></p>
+            </div>
+        </div>
+
+        <div class="message-box">
+            <h2> 给我留言</h2>
+            <p>如果你也喜欢树木，或者有什么关于树的问题想和我交流，欢迎通过上面的方式联系我！</p>
+            <p>无论是分享你拍到的美丽的树，还是交流种树经验，或者只是简单地打个招呼，我都很开心收到你的消息。</p>
+            <div class="highlight-text">
+                 小提示：如果你发现了身边有趣的树，欢迎拍照发给我，我可能会收录到树木图鉴里哦！
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>🌳 Trees - 与树同行 | 用热爱记录每一棵树的故事</p>
+    </div>
+</body>
+</html>
